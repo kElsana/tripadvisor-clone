@@ -1,0 +1,336 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    color:#113921 ;
+}
+.navBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.navBar__s1, .navBar__s2, .navBar__s3{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navBar__s1 img{
+    width: 50px;
+    height: 50px;
+}
+.navBar__s2 p{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+.navBar__s2 p:hover{
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: #E5E5E5;
+}
+.navBar__s3__btn{
+    border-radius: 50px;
+    border: none;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #113921;
+}
+.navBar__s3__btn:hover{
+    background-color: #1b5431;
+}
+.title{
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin: 15px;
+}
+.options{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin:50px ;
+    align-items: center;
+}
+.options__s1{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+.options__s1  :hover{
+    border-bottom: #113921 solid 2px;
+}
+.options__s1 img{
+     width: 30px;
+     height: 30px;
+}
+.searchBar{
+     position: relative;  
+     left: 25%; 
+     border: solid 2px rgba(128, 128, 128, 0.515);
+     background-color: #F7F7F7;
+     border-radius: 50px; 
+     width: 50%;
+     padding: 10px;
+     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.searchBar input{
+    border: none;
+    background-color: #F7F7F7;
+    font-size: 16px;
+}
+.searchBar input:focus{
+    outline: none;
+}
+.searchBar__s1{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.searchBar__s1__btn{
+     padding: 10px 20px;
+     border-radius: 50px;
+     background-color: #00D352;
+     border:solid 1px rgba(0, 0, 0, 0.392);
+     color: #fff;
+     font-size: 16px;
+     font-weight: bold;
+}
+.searchBar__s1__btn:hover{
+     background-color: #04c94f;
+
+}
+.screen{
+    position: relative;
+    margin-top: 50px;
+}
+.screen__s1 img{
+    position: relative;
+    left: 10%;
+    width: 80%;
+    height: 30rem;
+    border-radius: 20px;
+    padding: 10px;
+    filter: brightness(90%);
+}
+.screen__s2{
+    position: absolute;
+    bottom: 10%;
+    left: 12%;
+    color: #FFF;
+    font-weight: bold;
+}
+.screen__s2 h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.screen__s2 button{
+    margin-top: 10px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: none;
+    background-color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+.screen__s2 button:hover{
+    background-color: #eae8e8;
+}
+.popular__meal__s1{
+    margin-top: 50px;
+    padding-left:10% ;
+}
+.popular__meal__s1 p{
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: gray;
+}
+.popular__meal__s2 img{
+   width: 300px;
+   height: 300px;
+   border-radius: 10px;
+   filter: brightness(90%);
+}
+.popular__meal__s2{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    gap: 20px;
+    justify-content: center;
+} 
+.popular__meal__s2__img{
+    position: relative;
+}
+.popular__meal__s2__img h1{
+    position: absolute;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    bottom: 5%;
+    color: white;
+    font-weight: bold;
+    padding:0 20px;
+}
+.tour__places__s1{
+    margin-top: 50px;
+    padding-left:10% ;
+}
+.tour__places__s1 p{
+    color: gray;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+.tour__places__s2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin-top: 50px;
+}
+.tour__places__s2__cards img{
+       width: 300px;
+       height: 300px;
+       border-radius: 10px;
+}
+.tour__places__s2__cards{
+    width: 300px;
+}
+.inspiration_places{
+    padding: 50px 0;
+    margin-top: 50px;
+    background-color: #F7F7F7;
+}
+.inspiration_places__s2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 20%;
+    justify-content: center;
+    gap: 50px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.inspiration_places__s2__card{
+    width: 300px;
+}
+.inspiration_places__s2__card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+.inspiration_places__s1{
+    padding-left:15% ;
+    color: #000;
+}
+.card{
+    position: relative;
+    left: 5%;
+    margin-top: 70px;
+    background-color: #F7F7F7;
+    width: 90%;
+}
+.card__main{
+    display: flex;
+    gap: 30px;
+}
+.card__main__s1 img{
+    width: 600px;
+    height: 650px;
+    padding: 50px;
+    border-radius: 10px;
+}
+.card__main__s2{
+    margin-top: 20rem;
+    text-align: center;
+    padding: 0 10%;
+}
+.card__main__s2 p{
+    font-size: 18px;
+}
+.card__main__s2 button{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #113921;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+}
+.iconic__places__s1{
+    margin-top: 50px;
+    padding-left: 10%;
+}
+.iconic__places__s2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.iconic__places__s2__img img{
+    width: 300px;
+    height: 300px;
+    filter: brightness(90%);
+    border-radius: 10px;
+}
+.iconic__places__s2__img h1{
+    position: relative;
+    left: 2%;
+    bottom: 15%;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.footer{
+    margin-top: 50px;
+    background-color: #F7F7F7;
+    padding: 50px 0;
+    color: rgb(73, 73, 73);
+}
+.footer__main{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__main__s1{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    line-height: 1.4;    
+}
+.footer__main__s1__t1__a1{
+    margin-top: 10px;
+}
+.footer__main__s3{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    
+}
+.footer__main__s3__set__logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 0 50px;
+}
+.footer__main__s3__set__points{
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+    text-decoration: underline;
+    gap: 10px;
+    font-size: 18px;
+    padding: 0 50px;
+}
+.footer__main__s3__set__logo img{
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+}
+.footer__main__s3__set__para{
+    padding: 0 50px;
+     margin:10px ;
+}
+
