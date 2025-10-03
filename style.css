@@ -1,36 +1,38 @@
 *{
     padding: 0;
     margin: 0;
+    cursor: pointer;
 }
 body{
     color:#113921 ;
+    width: 100%;
 }
-.navBar{
+.navbar{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 15px;
+    height: 50px;
 }
-.navBar__s1, .navBar__s2, .navBar__s3{
+.navbar__brand, .navbar__menu, .navbar__actions{
     display: flex;
     align-items: center;
     gap: 10px;
 }
-.navBar__s1 img{
+.navbar__brand img{
     width: 50px;
     height: 50px;
 }
-.navBar__s2 p{
+.navbar__menu p{
     font-size: 18px;
     font-weight: bold;
-    margin: 10px;
+    padding: 10px 15px;
 }
-.navBar__s2 p:hover{
-    padding: 10px 20px;
+.navbar__menu p:hover{
     border-radius: 50px;
     background-color: #E5E5E5;
 }
-.navBar__s3__btn{
+.navbar__btn{
     border-radius: 50px;
     border: none;
     padding: 8px 20px;
@@ -39,10 +41,10 @@ body{
     color: #fff;
     background-color: #113921;
 }
-.navBar__s3__btn:hover{
+.navbar__btn:hover{
     background-color: #1b5431;
 }
-.title{
+.section__title{
     font-size: 28px;
     font-weight: bold;
     text-align: center;
@@ -55,19 +57,19 @@ body{
     margin:50px ;
     align-items: center;
 }
-.options__s1{
+.options__item{
     display: flex;
     gap: 10px;
     margin-bottom: 4px;
 }
-.options__s1  :hover{
+.options__item  :hover{
     border-bottom: #113921 solid 2px;
 }
-.options__s1 img{
+.options__item img{
      width: 30px;
      height: 30px;
 }
-.searchBar{
+.searchbar{
      position: relative;  
      left: 25%; 
      border: solid 2px rgba(128, 128, 128, 0.515);
@@ -77,20 +79,20 @@ body{
      padding: 10px;
      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
-.searchBar input{
+.searchbar input{
     border: none;
     background-color: #F7F7F7;
     font-size: 16px;
 }
-.searchBar input:focus{
+.searchbar input:focus{
     outline: none;
 }
-.searchBar__s1{
+.searchbar__wrapper{
    display: flex;
    justify-content: space-between;
    align-items: center;
 }
-.searchBar__s1__btn{
+.searchbar__wrapper__btn{
      padding: 10px 20px;
      border-radius: 50px;
      background-color: #00D352;
@@ -99,15 +101,15 @@ body{
      font-size: 16px;
      font-weight: bold;
 }
-.searchBar__s1__btn:hover{
+.searchbar__wrapper__btn:hover{
      background-color: #04c94f;
 
 }
-.screen{
+.hero{
     position: relative;
     margin-top: 50px;
 }
-.screen__s1 img{
+.hero__content img{
     position: relative;
     left: 10%;
     width: 80%;
@@ -116,18 +118,18 @@ body{
     padding: 10px;
     filter: brightness(90%);
 }
-.screen__s2{
+.hero__text{
     position: absolute;
     bottom: 10%;
     left: 12%;
     color: #FFF;
     font-weight: bold;
 }
-.screen__s2 h1 {
+.hero__text h1 {
     font-size: 48px;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
-.screen__s2 button{
+.hero__text button{
     margin-top: 10px;
     padding: 15px 25px;
     border-radius: 50px;
@@ -136,25 +138,25 @@ body{
     font-size: 16px;
     font-weight: bold;
 }
-.screen__s2 button:hover{
+.hero__text button:hover{
     background-color: #eae8e8;
 }
-.popular__meal__s1{
+.popular__meal__intro{
     margin-top: 50px;
     padding-left:10% ;
 }
-.popular__meal__s1 p{
+.popular__meal__intro p{
     font-size: 18px;
     letter-spacing: 1px;
     color: gray;
 }
-.popular__meal__s2 img{
+.popular__meal__list img{
    width: 300px;
    height: 300px;
    border-radius: 10px;
    filter: brightness(90%);
 }
-.popular__meal__s2{
+.popular__meal__list{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -162,10 +164,10 @@ body{
     gap: 20px;
     justify-content: center;
 } 
-.popular__meal__s2__img{
+.popular__meal__list__items{
     position: relative;
 }
-.popular__meal__s2__img h1{
+.popular__meal__list__items h1{
     position: absolute;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     bottom: 5%;
@@ -173,16 +175,16 @@ body{
     font-weight: bold;
     padding:0 20px;
 }
-.tour__places__s1{
+.tours__intro{
     margin-top: 50px;
     padding-left:10% ;
 }
-.tour__places__s1 p{
+.tours__intro p{
     color: gray;
     letter-spacing: 1px;
     font-size: 18px;
 }
-.tour__places__s2{
+.tours__cards{
     display: flex;
     flex-wrap: wrap;
     flex-basis: 20%;
@@ -191,12 +193,12 @@ body{
     padding: 10px;
     margin-top: 50px;
 }
-.tour__places__s2__cards img{
+.tours__card img{
        width: 300px;
        height: 300px;
        border-radius: 10px;
 }
-.tour__places__s2__cards{
+.tours__card{
     width: 300px;
 }
 .inspiration_places{
@@ -260,6 +262,9 @@ body{
     border: none;
     border-radius: 50px;
 }
+.card__main__s2 button:hover{
+    background-color: #1b5431;
+}
 .iconic__places__s1{
     margin-top: 50px;
     padding-left: 10%;
@@ -271,13 +276,13 @@ body{
     gap: 30px;
     margin-top: 50px;
 }
-.iconic__places__s2__img img{
+.iconic__places__s2__card img{
     width: 300px;
     height: 300px;
     filter: brightness(90%);
     border-radius: 10px;
 }
-.iconic__places__s2__img h1{
+.iconic__places__s2__card h1{
     position: relative;
     left: 2%;
     bottom: 15%;
@@ -294,28 +299,28 @@ body{
     display: flex;
     justify-content: space-around;
 }
-.footer__main__s1{
+.footer__main__content{
     display: flex;
     justify-content: space-around;
     gap: 50px;
     line-height: 1.4;    
 }
-.footer__main__s1__t1__a1{
+.footer__main__sub__block{
     margin-top: 10px;
 }
-.footer__main__s3{
+.footer__bottom{
     display: flex;
     justify-content: space-around;
     gap: 10px;
     
 }
-.footer__main__s3__set__logo{
+.footer__logo{
     display: flex;
     align-items: center;
     gap: 20px;
     padding: 0 50px;
 }
-.footer__main__s3__set__points{
+.footer__links{
     display: flex;
     flex-wrap: wrap;
     color: #000;
@@ -324,12 +329,12 @@ body{
     font-size: 18px;
     padding: 0 50px;
 }
-.footer__main__s3__set__logo img{
+.footer__logo img{
     width: 50px;
     height: 50px;
     background-color: transparent;
 }
-.footer__main__s3__set__para{
+.footer__description{
     padding: 0 50px;
      margin:10px ;
 }
