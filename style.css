@@ -4,8 +4,9 @@
     cursor: pointer;
 }
 body{
-    color:#113921 ;
-    width: 100%;
+    color:#113921;
+    overflow-x: hidden;
+    font-family: "Gabarito", sans-serif;
 }
 .navbar{
     display: flex;
@@ -13,6 +14,9 @@ body{
     align-items: center;
     padding: 15px;
     height: 50px;
+}
+.navbar__menubar{
+    display: none;
 }
 .navbar__brand, .navbar__menu, .navbar__actions{
     display: flex;
@@ -24,7 +28,7 @@ body{
     height: 50px;
 }
 .navbar__menu p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     padding: 10px 15px;
 }
@@ -134,6 +138,7 @@ body{
     padding: 15px 25px;
     border-radius: 50px;
     border: none;
+    border: none;
     background-color: #FFF;
     font-size: 16px;
     font-weight: bold;
@@ -160,7 +165,6 @@ body{
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 20%;
     gap: 20px;
     justify-content: center;
 } 
@@ -186,6 +190,7 @@ body{
 }
 .tours__cards{
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     flex-basis: 20%;
     justify-content: center;
@@ -209,6 +214,7 @@ body{
 .inspiration_places__s2{
     display: flex;
     flex-wrap: wrap;
+    flex-grow: 1;
     flex-basis: 20%;
     justify-content: center;
     gap: 50px;
@@ -236,6 +242,7 @@ body{
 }
 .card__main{
     display: flex;
+    /* flex-wrap: wrap; */
     gap: 30px;
 }
 .card__main__s1 img{
@@ -336,6 +343,114 @@ body{
 }
 .footer__description{
     padding: 0 50px;
-     margin:10px ;
+    margin:10px ;
 }
 
+
+@media screen and (max-width:800px){
+
+}
+
+@media screen and (max-width:600px){
+    .navbar__menubar{
+        display: block;
+    }
+    .navbar{
+        justify-content: start;
+        border-bottom: 1px rgba(184, 184, 184, 0.551) solid;
+    }
+    .hero__content img{
+        width: 100%;
+        left: 0;
+    }
+    .hero__text{
+        left: 5%;
+    }
+    .hero__text h1{
+        font-size: 38px;
+    }
+    .hero__text button{
+        padding: 10px 20px;
+    }
+    .popular__meal__intro { 
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .popular__meal__intro p{ 
+        font-size: 16px;
+    }
+    .popular__meal__list img{
+        width: 200px;
+        height: 200px;
+    }
+    .tours__intro{
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .tours__intro p{
+        font-size: 16px;
+    }
+    .tours__card{
+         width: 200px;
+    }
+    .tours__card img{
+        width: 200px;
+        height: 200px;
+    }
+    .popular__meal__list__items h1{
+        font-size: 24px;
+    }
+    .iconic__places__s1{
+        margin-top: 20px;
+        padding-left: 20px;
+   }
+    .iconic__places__s2__card img{
+        width: 200px;
+        height: 200px;
+    }
+    .iconic__places__s2__card h1{
+        bottom: 20%;
+        font-size: 24px;
+    }
+    .card{
+        left: 0;
+        width: 100%;
+    }
+    .card__main{
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .card__main__s1 img{
+        width: 300px;
+        height: 300px;
+        padding:30px 35%;
+    }
+    .card__main__s2{
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .inspiration_places__s1{
+        padding: 10px;
+        text-align: center;
+    }
+    .inspiration_places__s2__card {
+        width: 200px;
+    }
+    .inspiration_places__s2__card img{
+        width: 200px;
+        height: 200px;
+    }
+    .footer__main{
+        flex-wrap: wrap;
+    }
+    .footer__main__content{
+        padding: 20px;
+    }
+    .footer__description, .footer__links{
+        padding: 0 10px;
+    }
+    .navbar__menu, .navbar__actions,.section__title,  .options, .searchbar{
+        display: none;
+    }
+    
+}
