@@ -8,6 +8,9 @@ body{
     overflow-x: hidden;
     font-family: "Gabarito", sans-serif;
 }
+/* .overAll{
+    max-width:100%;
+} */
 .navbar{
     display: flex;
     justify-content: space-around;
@@ -56,6 +59,7 @@ body{
 }
 .options{
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
     margin:50px ;
@@ -63,6 +67,7 @@ body{
 }
 .options__item{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 4px;
 }
@@ -347,110 +352,151 @@ body{
 }
 
 
-@media screen and (max-width:800px){
+/* Media Queries */
 
-}
 
-@media screen and (max-width:600px){
-    .navbar__menubar{
-        display: block;
+@media (max-width: 1024px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 20px;
     }
-    .navbar{
-        justify-content: start;
-        border-bottom: 1px rgba(184, 184, 184, 0.551) solid;
+    .navbar__menu {
+        gap: 10px;
     }
-    .hero__content img{
-        width: 100%;
-        left: 0;
+    .hero__content img {
+        height: 25rem;
     }
-    .hero__text{
+    .hero__text {
         left: 5%;
-    }
-    .hero__text h1{
-        font-size: 38px;
     }
     .hero__text button{
         padding: 10px 20px;
     }
-    .popular__meal__intro { 
-        margin-top: 20px;
+    .card__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__main__s1 img {
+        width: 90%;
+        height: auto;
+    }
+    .card__main__s2 {
+        margin-top: 2rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar__menu {
+        display: none; 
+    }
+    .navbar__menubar {
+        display: block; 
+        font-size: 22px;
+    }
+    .navbar__brand h1 {
+        font-size: 20px;
+    }
+    .options {
+        margin: 20px;
+        gap: 15px;
+    }
+    .searchbar {
+        left: 0;
+        width: 90%;
+    }
+    .hero__content img {
+        width: 95%;
+        left: 0;
+    }
+    .hero__text h1 {
+        font-size: 28px;
+    }
+    .popular__meal__list img,
+    .tours__card img,
+    .inspiration_places__s2__card img,
+    .iconic__places__s2__card img {
+        width: 100%;
+        height: 300px;
         padding: 20px;
-    }
-    .popular__meal__intro p{ 
-        font-size: 16px;
-    }
-    .popular__meal__list img{
-        width: 200px;
-        height: 200px;
-    }
-    .tours__intro{
-        margin-top: 20px;
-        padding: 20px;
-    }
-    .tours__intro p{
-        font-size: 16px;
-    }
-    .tours__card{
-         width: 200px;
-    }
-    .tours__card img{
-        width: 200px;
-        height: 200px;
+        border-radius: 10px;
     }
     .popular__meal__list__items h1{
-        font-size: 24px;
+        bottom: 10%;
+        left: 2%;
     }
-    .iconic__places__s1{
-        margin-top: 20px;
-        padding-left: 20px;
-   }
-    .iconic__places__s2__card img{
-        width: 200px;
-        height: 200px;
-    }
-    .iconic__places__s2__card h1{
-        bottom: 20%;
-        font-size: 24px;
-    }
-    .card{
-        left: 0;
+    .tours__card{
         width: 100%;
     }
+    .tours__card h4, .tours__card p, .tours__card span{
+        padding: 0 20px;
+    }
+    .card__main__s1 img {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    .inspiration_places__s1 h2{
+       /* text-align: center; */
+       padding-left: 40px;
+    }
+    .inspiration_places__s2__card h3{
+        text-align: center;
+    }
+    .iconic__places__s1 h2{
+        text-align: center;
+    }
+    .iconic__places__s2__card h1{
+        left: 10%;
+        bottom: 20%;
+    }
     .card__main{
-        flex-wrap: wrap;
-        gap: 10px;
+        padding: 10px;
     }
     .card__main__s1 img{
         width: 300px;
         height: 300px;
-        padding:30px 35%;
     }
-    .card__main__s2{
-        margin-top: 10px;
-        padding-bottom: 20px;
+    .footer__main {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 0 20px;
     }
-    .inspiration_places__s1{
-        padding: 10px;
+    .footer__bottom {
+        flex-direction: column;
+        gap: 20px;
         text-align: center;
     }
-    .inspiration_places__s2__card {
-        width: 200px;
-    }
-    .inspiration_places__s2__card img{
-        width: 200px;
-        height: 200px;
-    }
-    .footer__main{
-        flex-wrap: wrap;
-    }
-    .footer__main__content{
-        padding: 20px;
-    }
-    .footer__description, .footer__links{
-        padding: 0 10px;
-    }
-    .navbar__menu, .navbar__actions,.section__title,  .options, .searchbar{
-        display: none;
-    }
-    
 }
+
+
+@media (max-width: 480px) {
+    .navbar__actions h4 {
+        font-size: 12px;
+    }
+    .navbar__btn {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+    .hero__text h1 {
+        font-size: 22px;
+    }
+    .hero__text h3 {
+        font-size: 14px;
+    }
+    .searchbar__wrapper__btn {
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+    .footer__links {
+        font-size: 14px;
+    }
+    .footer__description {
+        font-size: 14px;
+    }
+}
+
+
+
+
