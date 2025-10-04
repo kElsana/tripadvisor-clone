@@ -402,12 +402,12 @@ body{
         gap: 15px;
     }
     .searchbar {
-        left: 0;
+        left: 4%;
         width: 90%;
     }
     .hero__content img {
         width: 95%;
-        left: 0;
+        left: 1%;
     }
     .hero__text h1 {
         font-size: 28px;
@@ -436,6 +436,9 @@ body{
         height: auto;
         padding: 20px;
     }
+    .inspiration_places{
+        width: 100%;
+    }
     .inspiration_places__s1 h2{
        /* text-align: center; */
        padding-left: 40px;
@@ -450,12 +453,20 @@ body{
         left: 10%;
         bottom: 20%;
     }
+    .card{
+       width: 100%;
+       left: 0;
+
+    }
     .card__main{
         padding: 10px;
     }
     .card__main__s1 img{
         width: 300px;
         height: 300px;
+    }
+    .footer{
+        width: 100%;
     }
     .footer__main {
         flex-direction: column;
