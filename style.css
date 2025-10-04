@@ -441,13 +441,14 @@ body{
     }
     .inspiration_places__s1 h2{
        /* text-align: center; */
-       padding-left: 40px;
+       padding-left: 6%;
     }
     .inspiration_places__s2__card h3{
         text-align: center;
     }
-    .iconic__places__s1 h2{
+    .iconic__places__s1 {
         text-align: center;
+        padding-left: 0;
     }
     .iconic__places__s2__card h1{
         left: 10%;
