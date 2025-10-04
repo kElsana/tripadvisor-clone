@@ -402,7 +402,7 @@ body{
         gap: 15px;
     }
     .searchbar {
-        left: 4%;
+        left: 2%;
         width: 90%;
     }
     .hero__content img {
@@ -416,10 +416,8 @@ body{
     .tours__card img,
     .inspiration_places__s2__card img,
     .iconic__places__s2__card img {
-        width: 100%;
+        width: 95%;
         height: 300px;
-        padding: 20px;
-        border-radius: 10px;
     }
     .popular__meal__list__items h1{
         bottom: 10%;
@@ -427,9 +425,10 @@ body{
     }
     .tours__card{
         width: 100%;
+        margin-left: 10px;
     }
     .tours__card h4, .tours__card p, .tours__card span{
-        padding: 0 20px;
+        padding: 0 ;
     }
     .card__main__s1 img {
         width: 100%;
@@ -438,6 +437,7 @@ body{
     }
     .inspiration_places{
         width: 100%;
+        background-color: transparent;
     }
     .inspiration_places__s1 h2{
        /* text-align: center; */
@@ -456,6 +456,7 @@ body{
     .card{
        width: 100%;
        left: 0;
+       background-color: transparent;
 
     }
     .card__main{
@@ -467,6 +468,7 @@ body{
     }
     .footer{
         width: 100%;
+        margin-left:10px ;
     }
     .footer__main {
         flex-direction: column;
